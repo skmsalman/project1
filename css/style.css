@@ -1,0 +1,959 @@
+ /* 
+ font-family: 'Poppins', sans-serif; */
+ *
+ {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   font-family: 'Poppins', sans-serif;
+ }
+ ::after,::before
+ {
+  box-sizing: border-box;
+ }
+ :any-link
+ {
+   text-decoration: none;
+ }
+ /* #root>div {
+   min-height: calc(100vh - 218px);
+} */
+ :root
+ {
+   --bluish-purple: #6047ec;
+   --charcoal-grey2: #575757;
+   --white: #ffffff;
+   --dark-jungle2: #1E1E1E;
+   --mist-blue: #636f83;
+   --gun-powder: #3c4b64;
+   --rangoon-green: #626262;
+   --down-pink: #ebebeb;
+   --blue-lotus: #684EFB;
+   --violet-blue: #5A00DD;
+   --white2: #ffffff;
+   --black2: #000;
+   --dark-grey: #626262;
+   --blue-lotus2: #684EFB;
+   --violet-blue2: #5A00DD;
+   --white3: #ffffff;
+   --thunder-black: #303030;
+   --white-lilac: #F5F7FF;
+   --white4: #ffffff;
+   --dark-grey-light: #383838;
+   --mercury: #e8e6e9;
+   --white-dark-theme: #ffffff;
+   --dark-jungle: #1E1E1E;
+   --purple-blue: #5930E1;
+   --ghost-white: #f5f7ff;
+   --white5: #ffffff;
+   --smoky-black: #0F0F0F;
+   --white9: #ffffff;
+   --black-eel: #434343;
+   --dark-grey2: #363636;
+   --violet-blue3: #5B05DF;
+   --catskill-white: #F3F5F9;
+   --white-smoke-lite: #F5F5F5;
+   --white6: #ffffff;
+   --blue-baybux: #4f5d73;
+   --catskill-white2: #F3F5F9;
+   --dove-grey: #6C6C6C;
+   --gainsboro: #ddd;
+   --white10: #ffffff;
+   --river-bed: #3c4b64;
+   --gun-powder2: #3c4b64;
+   --dune: #323232;
+   --blue-purple2: #321FDB;
+   --deep-pink: #FF136F;
+   --dark-jungle-green: #232323;
+   --marble-blue: #636f83;
+   --marine-blue: #122E5B;
+   --medium-pink: #FF589B;
+   --red-pink: #FF136F;
+   --white7: #ffffff;
+   --palatinate-blue: #FF136F;
+   --desert-storm-white: #f7f7f7;
+   --water-white: #eff3f9;
+   --dark-mint: #3ac55a;
+   --white8: #ffffff;
+   --magnolia-white: #f3f5f9;
+   --wisp-white: #F6F6F6;
+   --vista-white: #FAF7FF;
+   --quill-grey: #ffffff;
+   --muiled-wine: #3c4b64;
+   --thunder-grey: #3c4b64;
+   --storm-dust: #646464;
+   --blue-purple: #321FDB;
+   --boulder: #777777;
+   --purplish-blue: #5e24f9;
+   --floral-white: #fffaeb;
+   --theme-bg: #ffffff;
+ }
+ .theme-bg
+ {
+   background: var(--theme-bg);
+ }
+ body
+ {
+   /* overflow-x: hidden; */
+   font-size: .875rem;
+   font-weight: 400;
+   line-height: 1.5;
+   text-align: left;
+   color: #3c4b64 !important;
+   background-color: #ebedef;
+   font-family: "Poppins","Hind Siliguri",sans-serif !important;
+ }
+ .theme-bg .hero-area
+ {
+   background: linear-gradient(107.07deg,var(--blue-lotus) -6.64%,var(--violet-blue) 89.11%);
+   position: relative;
+   background-size: cover;
+   background-position: bottom;
+   background-repeat: no-repeat;
+ }
+ /* nav */
+ .home-nav
+ {
+   z-index: 1060 !important; 
+ }
+ nav .navbar-brand
+ {
+   /* width: 278px; */
+   max-width: 278px;
+   height: 41px;
+ }
+ nav .navbar-brand .logo img
+ {
+   width: 100%;
+   height: 100%;
+ }
+ .navbar-nav .nav-item 
+ {
+   padding: 0 7px !important;
+   
+   /* margin-bottom: 9px; */
+ }
+ .navbar-nav .nav-item .nav-link
+ {
+   font-size: 14px;
+   color: #fff;
+   font-family: 'Poppins', sans-serif !important;
+   cursor: pointer;
+   display: inline-block;
+ }
+ .navbar-nav .cart
+ {
+   position: relative;
+  
+ }
+ .navbar-nav .cartAmountBadge
+ {
+   position: absolute;
+   background: #ffda45;
+   text-align: center;
+   width: 14px;
+   height: 14px;
+   border-radius: 50%;
+   display: inline-block;
+   top: 5px;
+   left: 21px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .navbar-nav .btn-login
+ {
+   border-radius: 52px;
+   border: 1px solid #fff;
+   padding: 8px 20px !important;
+   transition: all .3s linear;
+ }
+ .navbar-nav .btn-login:hover
+ {
+   background: #ffff;
+   color: var(--blue-purple);
+ }
+ .navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow:none !important;
+}
+ .navbar-nav .btn-rounded
+ {
+   background: linear-gradient(335.64deg,#ff589b -19.22%,#ff136f 118.87%)!important;
+   border-radius: 52px !important;
+   padding: 8px 20px !important;
+   border: none !important;
+ }
+ .navbar-nav .btn:first-child
+ {
+   margin-bottom: 12px;
+ }
+.sticky-bg
+ {
+   background: linear-gradient(107.07deg,var(--blue-lotus) -6.64%,var(--violet-blue) 89.11%);
+ }
+ /* scroll start */
+ .scroll-down .home-nav
+{
+  transform: translate3d(0, -100%, 0);
+  transition: .5s;
+}
+.scroll-up .home-nav 
+{
+  filter: drop-shadow(0 -10px 10px rgba(0,0,0,.9));
+  transition: .5s;
+}
+ /* scroll end */
+ .carousel-inner 
+ {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+ }
+ .carousel-inner .carousel-item
+ {
+  transform: none;
+ 
+ }
+  .carousel-inner .carousel-item .curo-img 
+ { 
+    
+   max-width: 445px;
+   height: 445px;
+  
+ }
+ .carousel-inner .carousel-item .curo-img img
+ {
+  width: 100%;
+  height: 100%;
+ 
+ } 
+ .carousel-inner .carousel-item h2
+ {
+   font-size: 40px;
+   font-weight: 700;
+   font-family: 'Poppins', sans-serif !important;
+ }
+ .carousel-inner .carousel-item p
+ {
+   font-size: 16px;
+   font-family: "Poppins","Hind Siliguri",sans-serif!important;
+   font-weight:normal !important;
+ }
+ .carousel-inner .carousel-item .btn-danger,.modal-body .btn-danger, .notice .notice-dark-theme .btn-danger,
+ .home-content .btn-danger,
+ .student-feedback-component .btn-danger
+ {
+  background: linear-gradient(335.64deg,#ff589b -19.22%,#ff136f 118.87%);
+  padding: 10px;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: 50px;
+  text-align: center;
+  padding: 15px 65px 15px 42px !important;
+  font-weight: 400;
+ }
+ .carousel-inner .carousel-item .btn, .modal-body .btn, .notice .notice-dark-theme .btn,
+ .home-content .btn,
+ .student-feedback-component .btn
+ {
+   font-size: 14px !important;
+   border: 1px solid #e55353;
+   position: relative;
+   
+ }
+ .carousel-inner .carousel-item .btn:focus ,
+ .modal-body .btn:focus, 
+ .notice .notice-dark-theme .btn:focus,
+ .student-feedback-component .btn:focus
+ {
+  outline: none;
+  box-shadow: none;
+ }
+ .home-content .btn:focus
+ {
+  color: #fff;
+  background-color: #e03232;
+  border-color: #de2727;
+  box-shadow: 0 0 0 0.2rem rgb(233 109 109 / 50%);
+}
+.home-content .btn
+{
+  width: 100%;
+}
+ .carousel-inner .carousel-item .btn-danger:hover, .modal-body .btn-danger:hover,
+ .notice .notice-dark-theme .btn-danger:hover ,.home-content .btn-danger:hover,
+ .student-feedback-component .btn:hover
+ {
+  background: linear-gradient(45deg,#ff35b4,#ff193f);
+ }
+ .carousel-inner .carousel-item .btn .fa-arrow-right,.modal-body .btn .fa-arrow-right, .notice .notice-dark-theme .btn .fa-arrow-right,.home-content .btn .fa-arrow-right,
+ .student-feedback-component .btn .fa-arrow-right
+ {
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  font-weight: 900;
+  font-size: 1.4rem;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  color: rgb(249, 79, 79);
+  text-align: center;
+  line-height: 42px;
+  right:5px;
+  top: 5px;
+ }
+  /* modal */
+  .modal-body
+  {
+    max-height: 80vh;
+    overflow: scroll;
+  
+  }
+  .modal-body p
+  {
+    color: var(--muiled-wine);
+    font-family: "Poppins","Hind Siliguri",sans-serif !important;
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+ .modal-content
+ {
+  padding-left: 40px !important;
+  padding-top: 40px !important;
+ }
+ .modal
+ {
+  position: relative;
+  /* left: 48%; */
+  top: 0;
+  /* transform: translate(-50%,-111%);  */
+ }
+ .ps a .fa-xmark
+ {
+   position: absolute;
+   left: 95%;
+   top:-19px;
+   background:#ff3838;
+   padding: 12px;
+   color: #fff;
+   font-size: 20px;
+   border-radius: 50%;
+   width: 42px;
+   height: 42px;
+   display: flex;
+ justify-content: center;
+ align-content: center;
+ }
+ /* notice */
+ 
+ .notice-wrapper
+ {
+  box-shadow: 0 10px 12px 0 rgba(55,84,170,.1019607843)!important;
+  border-radius: 20px;
+  background: var(--white2) !important;
+  position: relative;
+  top: -73px !important;
+ }
+ .notice .notice-wrapper .notice-dark-theme
+ {
+  background: linear-gradient(45deg,var(--violet-blue),var(--blue-lotus));
+ }
+ .notice .notice-title
+ {
+  font-size: 34px;
+  font-weight: 700;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+  color: var(--black2);
+ }
+ .notice .theme-notice-title h5
+ {
+      color: var(--black2);
+      font-family: "Poppins","Hind Siliguri",sans-serif !important;
+      font-style: normal;
+    font-size: 18px;
+ }
+ .notice .theme-notice-title i
+{
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  margin-right: 12px;
+ line-height: 23px;
+
+}
+.notice .theme-notice-title i.one 
+{
+  background: linear-gradient(-45deg,#5a00dd,#684efb);
+}
+.notice .theme-notice-title i.two
+{
+  background: linear-gradient(-45deg,#fc5e51,#f59e75);
+}
+.notice .theme-notice-title i.three
+{
+  background: linear-gradient(-45deg,#ff9c35,#ffd019);
+}
+.notice .theme-notice-title i.four
+{
+  background: linear-gradient(-45deg,#ff193f,#ff35b4);
+  line-height: 25px;
+}
+.notice .notice-wrapper .notice-dark-theme h5
+{
+  font-size: 18px !important;
+  font-weight: 600;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+}
+/* course-craiteria-section */
+.course-craiteria-section  h5
+{
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+  color: #000;
+}
+.course-craiteria-section .preview-card
+{
+  padding: 25px 30px!important;
+  background: var(--white3);
+  border-radius: 16px;
+  font-weight: 300;
+}
+.preview
+{
+  position: relative;
+}
+ .play-icon
+ {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+ }
+ .preview-card .lazy-image
+ {
+  border-radius: 10px !important;
+ }
+ .preview-card .timer
+ {
+    background: linear-gradient(180deg,#684efb .01%,#5a00dd 100.01%);
+    border-radius: 10px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Poppins","Hind Siliguri",sans-serif !important;
+    padding: 14px 10px;
+ }
+ .preview-card .count
+ {
+  flex-wrap: wrap;
+ }
+ .preview-card .count > div img
+ {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+ }
+.preview-card .count > div
+{  
+
+  display: flex;
+  background: #ffff;
+  flex: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 57.2653px;
+  box-shadow:  0 10px 40px rgb(0 0 0 / 5%);
+  padding: 8px 15px 8px 8px;
+
+}
+.preview-card .count > div p
+{
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+}
+.preview-card h3
+{
+  font-size: 36px;
+  font-weight: 500;
+  color: #303030;
+}
+
+.course-criterias ul li .fa-square-check
+{
+  /* background: linear-gradient(75deg,#fc5e51,#f59e75); */
+  /* background-clip: text; */
+  margin-right: 8px;
+  margin-top: 5px;
+  color: tomato;
+  font-size: 1.4em;
+  display: flex;
+
+}
+.course-criterias ul li
+{
+  margin-bottom: 35px;
+}
+.course-criterias span,.course-criterias p
+{
+  font-size: 17px;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+  color: #000;
+}
+/* course-information-component */
+.course-information-component
+{
+  background: var(--white-lilac);
+  padding: 50px 0;
+}
+.course-information-component .course-information-heading
+{
+  background: var(--white4);
+  border-radius: 10px;
+  max-width: 564px;
+  width: 100%;
+  /* box-shadow: 0 5.64912px 14.1228px rgb(0 0 0 / 10%); */
+}
+.course-information-component .course-information-heading div
+{
+  padding-top:20px ;
+  color: #6C6C6C;
+   font-size: 18px;
+   cursor: pointer;
+   box-sizing: border-box;
+   font-size: 500;
+   margin: 0 5%;
+   width: 38%;
+   /* line-height: 29px; */
+   position: relative;
+}
+.course-information-component .course-information-heading .course-information-title::after
+{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  background-color: #ff136f;
+  position: absolute;
+  bottom: 0;
+}
+.course-information-component .course-information-title
+{
+  color: #ff136f !important;
+}
+.course-information-component .course-information-title .fa-star,
+.course-information-component .fa-square-pen
+{
+  font-size: 40px;
+}
+.course-information-component .course-information-heading h5
+{
+  margin: 18px 0;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+}
+/* course-objective-component */
+.course-objective-component img
+{
+  height: 70px;
+  width: 70px;
+  margin-bottom: 10px !important;
+}
+.card
+{
+  box-shadow: 0 30px 80px 0 rgb(55 84 170 / 10%);
+  border: none;
+  margin-bottom: 30px;
+}
+.card-title
+{
+  font-size: 16px !important;
+  color: #383838 !important;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+  font-weight: 500 !important;
+}
+.card a
+{
+  display: block;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+}
+.card p
+{
+  font-size: 14px !important;
+  color: #383838;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+}
+/* course-content */
+.course-content
+{
+  background: #fff !important;
+}
+.dark-course-content
+
+{
+  background: #fff !important;
+}
+.content-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #E8E6E9 #F6F6F6;
+ 
+}
+
+/* Works on Chrome, Edge, and Safari */
+.content-scroll::-webkit-scrollbar {
+  width: 12px;
+}
+
+.content-scroll::-webkit-scrollbar-track {
+  background: orange;
+}
+
+.content-scroll::-webkit-scrollbar-thumb {
+  background-color: blue;    
+  border-radius: 20px;      
+  border: 3px solid orange;  
+}
+.content-scroll ul li h5
+{
+  font-weight: 500 !important;
+  color: var(--dark-jungle);
+  /* font-size: 14px; */
+  line-height: 3;
+}
+.home-content .section-title,
+.frequent-ask-question .frequent-ask-main .section-title,
+.porject-display-component .section-title,
+.student-feedback-component .section-title
+{
+  color: var(--black2);
+  font-weight: 700 ;
+  font-style: normal;
+  font-size: 34px;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+}
+/* freequent-ask-question */
+.frequent-ask-question .frequent-ask-main
+{
+  background: linear-gradient(180deg,var(--blue-lotus),var(--violet-blue));
+}
+ 
+/* accordion */
+.accordion-button:focus
+{
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+.accordion-item
+{
+  margin-bottom: 15px !important;
+  border: none !important;
+  background-color: none !important;
+  box-shadow: 0 10px 15px 0 rgba(55,84,170,.1019607843)!important;
+}
+.accordion button
+{
+  background: #552DDB !important;
+  border-bottom: none !important;
+  border-radius: 10px !important;
+}
+.accordion
+{
+  margin:10px;
+  border-width: 0 !important;
+  border-color: none !important;
+  /* position: relative; */
+   --bs-accordion-border-width: 0 !important;
+  --bs-accordion-bg: none !important; 
+   
+}
+.accordion-collapse
+{
+  background-color:  #5930E1;
+  margin-top: -10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-radius: none !important;
+}
+.accordion h5
+{
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+}
+.accordion p
+{
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+}
+.accordion-button::after
+{
+  filter: brightness(0%) invert(100%);
+}
+  /* porject-display-component */
+  .porject-display-component
+  {
+    background-color: var(--ghost-white);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+ .porject-display-component .project-text
+ {
+   color: var(--dark-grey-light);
+   font-weight: 500;
+   font-family: "Poppins","Hind Siliguri",sans-serif !important;
+ }
+ 
+ /* swiper */
+
+ .swiper {
+  max-width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  max-width: 650px;
+  height: auto;
+  /* margin-right: 40px !important; */
+}
+
+.swiper-slide .card {
+  /* display: block; */
+  width: 100%;
+  border-radius: 16px !important;
+  box-shadow: 0 0 35px -2px rgb(72 73 121 / 15%);
+  border: none;
+  z-index: 1000;
+ 
+}
+.swiper-3d .swiper-slide-shadow-right,.swiper-3d .swiper-slide-shadow-left
+{
+  background-image: none !important;
+}
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal
+{
+  bottom: 86px;
+}
+/* .project-display-card
+{
+  box-shadow: 0 0 35px -2px rgb(72 73 121 / 15%);
+  border-radius: 16px;
+  font-size: 10px!important;
+} */
+.porject-display-card .card-title
+{
+  font-size: 17px !important;
+  color: #3c4b64 !important;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+}
+.porject-display-card .card-text
+{
+  font-size: 14px !important;
+  color: #3c4b64 !important;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+}
+.porject-display-card .btn
+{
+  height: 26px;
+  padding-top: 0px;
+  margin: 3px 0;
+  box-shadow: unset;
+  border-radius: 16px;
+  color: #fff;
+  /* background: linear-gradient(45deg,#ff193f,#ff35b4); */
+  border: 1px solid transparent;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.porject-display-card .html-button
+{
+  background: linear-gradient(45deg,#ff193f,#ff35b4);
+}
+.porject-display-card .css-button
+{
+  background: linear-gradient(45deg,#5a00dd,#684efb);
+}
+.porject-display-card .bootstrap-button {
+  background: linear-gradient(45deg,#2eb1ea,#2eb1ea);
+}
+.porject-display-card .node-button {
+  background: linear-gradient(45deg,#4289ff,#07f8c3);
+}
+.porject-display-card .react-button {
+  background: linear-gradient(45deg,#5e51fc,#7593f5);
+}
+.porject-display-card .mongodb-button {
+  background: linear-gradient(45deg,#ff6480,#f22e63);
+}
+.porject-display-card .heroku-button {
+  background: linear-gradient(45deg,#4f59ff,#15dbff);
+}
+ .porject-display-card .basic-react-button
+ {
+  background: linear-gradient(45deg,#ff193f,#ff35b4);
+ }
+ .porject-display-card .debugging-button {
+  background: linear-gradient(45deg,#5165fc,#7bf593);
+}
+.porject-display-card .dev-tool-button {
+  background: linear-gradient(45deg,#2bde8c,#86f244);
+}
+.porject-display-card .react-router-button {
+  background: linear-gradient(45deg,#ff9c35,#ffd019);
+}
+.porject-display-component .material-ui-button {
+  background: linear-gradient(45deg,#4289ff,#07f8c3);
+}
+.porject-display-card .firebase-button
+{
+  background: linear-gradient(45deg,#4289ff,#07f8c3);
+}
+.porject-display-card .google-map-button
+{
+  background: linear-gradient(45deg,#5e51fc,#7593f5)
+}
+.porject-display-card .btn:focus
+{
+ box-shadow: 0 0 0 0.2rem rgb(50 31 219 / 25%);
+ outline: 0;
+}
+.porject-display-card .btn:hover
+{
+  color: #3c4b64;
+}
+/* about-instructor-component */
+.about-instructor-component p
+{
+  color: var(--dark-grey-light) !important;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+
+}
+.about-instructor-component h3
+{ 
+  color: #000;
+  font-family: "Poppins","Hind Siliguri",sans-serif !important;
+}
+/* student-feedback-component */
+.student-feedback-component
+{
+  background-color: #F5F7FF;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.student-feedback-component .swiper {
+max-width: 100%;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.student-feedback-component .swiper-slide {
+background-position: center;
+background-size: cover;
+max-width: 650px;
+height: auto;
+filter: blur(4px);
+}
+.student-feedback-component .swiper-slide-active
+{
+  filter: blur(0);
+}
+.student-feedback-component .swiper-slide .card {
+width: 100%;
+border-radius: 16px !important;
+box-shadow: 1px 3px 3px rgb(0 0 0 / 2%);
+border: none;
+z-index: 1000;
+position: relative;
+
+}
+.student-feedback-component .swiper-slide .card img
+{
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  position: absolute;
+  top: -47px;
+  border: 10px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  left: calc(50% - 47px);
+}
+.student-feedback-component .swiper-slide .card .card-text
+{
+  margin-bottom: 0 !important;
+}
+ 
+.student-feedback-component .swiper-3d .swiper-slide-shadow-right,.swiper-3d .swiper-slide-shadow-left
+{
+background-image: none !important;
+}
+.student-feedback-component .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal,
+.porject-display-component .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal
+{
+bottom: 0px;
+}
+.student-feedback-component .swiper-slide .card .card-title
+{
+font-size: 17px !important;
+color: #3c4b64 !important;
+font-family: "Poppins","Hind Siliguri",sans-serif !important;
+margin-top: 37px !important;
+margin-bottom: 4px !important;
+}
+.student-feedback-component .swiper-slide .card .card-title small
+{
+  font-weight: 400;
+  font-size: 14px;
+}
+.student-feedback-component .card-text
+{
+font-size: 14px !important;
+color: #3c4b64 !important;
+font-family: "Poppins","Hind Siliguri",sans-serif !important;
+}
+/* footer-component */
+.footer-component
+{
+  background: linear-gradient(180deg,var(--blue-lotus) .01%,var(--violet-blue) 100.01%);
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-component .footer-nav2 .social-icon .me-4 
+{
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  background: #fff;
+  display: inline-block;
+  color: #321FDB;
+  text-align: center;
+  
+}
+
+.footer-component .footer-nav2 .social-icon .fa-brands
+{
+  font-size: 24px !important;
+  
+}
+.footer-component ul
+{
+  padding-left: 0 !important;
+}
+
+/* ------------- */
+
+ 
